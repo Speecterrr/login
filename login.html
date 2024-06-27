@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de Registro e Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <div id="login" class="container active">
+        <h2>Login</h2>
+        <form>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+        <span class="toggle-link" onclick="toggleForm()">Não tem uma conta? Registre-se</span>
+    </div>
+
+    <div id="registro" class="container">
+        <h2>Registro</h2>
+        <form>
+            <div class="input-group">
+                <label for="nome">Nome</label>
+                <input type="text" id="nome" name="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="idCidade">Id na Cidade</label>
+                <input type="text" id="idCidade" name="idCidade" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="input-group">
+                <label for="codigoAcesso">Código de Acesso</label>
+                <input type="text" id="codigoAcesso" name="codigoAcesso" required>
+            </div>
+            <button type="submit">Registrar</button>
+        </form>
+        <span class="toggle-link" onclick="toggleForm()">Já tem uma conta? Faça login</span>
+    </div>
+    <script src="login.js"></script>
+</body>
+</html>
